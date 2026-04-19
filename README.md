@@ -99,7 +99,3 @@ Current tests cover:
 - Overlap resolution is suggestive, not definitive.
 - Always validate final ranges with domain expertise and full experiment context.
 
-## Troubleshooting
-
-- If you see `AttributeError: module 'numpy' has no attribute 'trapz'`, update to the latest code in this branch.
-  The integration helper is NumPy 2.x compatible and uses `np.trapezoid` with an older-version fallback.

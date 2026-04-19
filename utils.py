@@ -57,10 +57,7 @@ def integrate_window(x: np.ndarray, y: np.ndarray, left: float, right: float) ->
     yw = y[mask]
     if len(xw) == 1:
         return float(yw[0])
-    # NumPy 2.x: np.trapz was removed in favor of np.trapezoid.
-    # Keep a small compatibility fallback for older NumPy versions.
-    if hasattr(np, "trapezoid"):
-        return float(np.trapezoid(yw, xw))
+
     return float(np.trapz(yw, xw))
 
 
