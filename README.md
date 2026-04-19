@@ -98,3 +98,4 @@ Current tests cover:
 - Background handling is a simple transparent local baseline estimate.
 - Overlap resolution is suggestive, not definitive.
 - Always validate final ranges with domain expertise and full experiment context.
+

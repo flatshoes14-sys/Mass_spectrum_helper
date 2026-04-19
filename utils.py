@@ -57,6 +57,7 @@ def integrate_window(x: np.ndarray, y: np.ndarray, left: float, right: float) ->
     yw = y[mask]
     if len(xw) == 1:
         return float(yw[0])
+
     return float(np.trapz(yw, xw))
 
 
